@@ -1,163 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AxionCo | Marketing Agency</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #ffffff;
-      color: #111;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="We help you get more repeat customers. We create content, set up automations, and build CRM systems so every lead and customer is tracked and followed up.">
+    <meta name="keywords"
+        content="Repeat customers, customer retention, growth system, marketing automation, CRM, AxionCo">
+    <meta name="author" content="AxionCo">
+    <meta name="robots" content="index, follow">
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 10%;
-      border-bottom: 1px solid #eee;
-    }
+    <!-- Open Graph -->
+    <meta property="og:title" content="AxionCo — Get More Repeat Customers">
+    <meta property="og:description"
+        content="We help you get more repeat customers through content, automation, and CRM.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://axionco.com">
 
-    .logo {
-      font-weight: bold;
-      font-size: 22px;
-      color: #0B3D2E;
-    }
+    <title>AxionCo — Get More Repeat Customers</title>
 
-    nav a {
-      text-decoration: none;
-      color: #111;
-      margin-left: 25px;
-      font-size: 14px;
-    }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
-    .hero {
-      padding: 100px 10%;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
-
-    .hero span {
-      color: #0B3D2E;
-    }
-
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto 30px;
-      color: #555;
-      font-size: 16px;
-    }
-
-    .btn {
-      background-color: #0B3D2E;
-      color: #fff;
-      padding: 12px 25px;
-      text-decoration: none;
-      font-size: 14px;
-      border-radius: 4px;
-    }
-
-    .section {
-      padding: 80px 10%;
-      text-align: center;
-    }
-
-    .services {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-
-    .card {
-      width: 250px;
-      padding: 25px;
-      border: 1px solid #eee;
-      border-radius: 8px;
-    }
-
-    .card h3 {
-      color: #0B3D2E;
-      margin-bottom: 15px;
-    }
-
-    footer {
-      padding: 40px 10%;
-      text-align: center;
-      border-top: 1px solid #eee;
-      font-size: 14px;
-      color: #777;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 30px;
-      }
-      .services {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-  <div class="logo">AxionCo</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+    <!-- ═══════════════════════════════════════ -->
+    <!-- NAVIGATION -->
+    <!-- ═══════════════════════════════════════ -->
+    <nav class="nav" id="main-nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo" id="nav-logo">
+                <span class="nav__logo-text">AxionCo</span>
+            </a>
+            <div class="nav__links" id="nav-links">
+                <a href="#services" class="nav__link">Services</a>
+                <a href="#who-it-is-for" class="nav__link">Who It's For</a>
+                <a href="#how-it-works" class="nav__link">How It Works</a>
+                <a href="#about-us" class="nav__link">About Us</a>
+            </div>
+            <div class="nav__actions">
+                <a href="#final-cta" class="nav__cta-link" id="nav-cta">Contact Us</a>
+                <button class="nav__mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-<section class="hero">
-  <h1>Engineered <span>Growth</span> for Modern Brands</h1>
-  <p>
-    AxionCo is a performance-driven marketing agency helping businesses scale
-    through strategy, data, and execution.
-  </p>
-  <a href="#" class="btn">Get Started</a>
-</section>
-
-<section class="section">
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Performance Marketing</h3>
-      <p>Data-driven campaigns that generate measurable growth.</p>
+    <!-- ═══════════════════════════════════════ -->
+    <!-- GLOBAL AMBIENT BACKGROUND -->
+    <!-- ═══════════════════════════════════════ -->
+    <div class="gradient-bg">
+        <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+        </div>
     </div>
-    <div class="card">
-      <h3>Brand Strategy</h3>
-      <p>Position your business to stand out and scale confidently.</p>
-    </div>
-    <div class="card">
-      <h3>Lead Generation</h3>
-      <p>Systems designed to consistently attract qualified leads.</p>
-    </div>
-  </div>
-</section>
 
-<section class="section" style="background:#f8f8f8;">
-  <h2>Why AxionCo?</h2>
-  <p style="max-width:600px;margin:auto;color:#555;">
-    We combine strategy, creativity, and performance to deliver sustainable growth.
-    Our focus is simple: results that matter.
-  </p>
-</section>
 
-<footer>
-  © 2026 AxionCo. All rights reserved.
-</footer>
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 1: HERO -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero__soft-glow"></div>
+        <div class="hero__grid"></div>
 
+        <canvas id="particle-canvas"></canvas>
+
+        <!-- Morphing SVG Shape (Enterprise Core) -->
+        <div class="morph-container">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path class="morphing-path"
+                    d="M100,20 Q140,20 180,100 Q140,180 100,180 Q60,180 20,100 Q60,20 100,20Z" />
+            </svg>
+        </div>
+
+        <div class="hero__container">
+            <div class="hero__glass-panel reveal-up">
+                <div class="hero__content">
+                    <div class="reveal-mask">
+                        <h1 class="hero__headline reveal-gradient" id="hero-headline">
+                            We Help You Get More<br>
+                            <span class="text-white">Repeat Customers.</span>
+                        </h1>
+                    </div>
+
+                    <p class="hero__subheadline" id="hero-subheadline">
+                        We create content, set up automations, and build CRM systems so every lead and customer is
+                        tracked and followed up.
+                    </p>
+
+                    <div class="hero__actions" id="hero-actions">
+                        <a href="#final-cta" class="btn btn--primary magnetic-button" id="hero-cta-primary">
+                            <span class="btn-content">
+                                <span>Contact Us</span>
+                                <svg class="btn__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="#services" class="btn btn--ghost" id="hero-cta-secondary">
+                            <span>Explore Services</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__scroll-indicator" id="scroll-indicator">
+            <div class="hero__scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION: SERVICES STACK -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="services-stack" id="services">
+        <div class="service-card" id="service-1">
+            <div class="service-content">
+                <span class="service-step">01</span>
+                <h2 class="service-title">Content &<br><span class="text-accent">Creative Engine</span></h2>
+                <p class="service-text">We produce high-authority content that builds trust before the first
+                    conversation. From cinematic video to conversion-focused copy.</p>
+                <ul class="service-features">
+                    <li>Core Brand Storytelling</li>
+                    <li>High-Volume Ad Creatives</li>
+                    <li>Social Infrastructure</li>
+                </ul>
+            </div>
+            <div class="service-visual">
+                <div class="visual-glow"></div>
+                <!-- Placeholder for visual element -->
+            </div>
+        </div>
+
+        <div class="service-card" id="service-2">
+            <div class="service-content">
+                <span class="service-step">02</span>
+                <h2 class="service-title">Automation &<br><span class="text-accent">Conversion Logic</span></h2>
+                <p class="service-text">We build the "brain" of your business. Automated touchpoints that nurture leads
+                    24/7 without human intervention.</p>
+                <ul class="service-features">
+                    <li>Multi-Channel Flows</li>
+                    <li>Behavioral Triggers</li>
+                    <li>Lead Scoring Systems</li>
+                </ul>
+            </div>
+            <div class="service-visual">
+                <div class="visual-glow"></div>
+            </div>
+        </div>
+
+        <div class="service-card" id="service-3">
+            <div class="service-content">
+                <span class="service-step">03</span>
+                <h2 class="service-title">CRM &<br><span class="text-accent">Retention Intel</span></h2>
+                <p class="service-text">Turn your database into a predictable revenue stream. We organize your data to
+                    trigger repeat sales automatically.</p>
+                <ul class="service-features">
+                    <li>CRM Implementation</li>
+                    <li>Customer Segmentation</li>
+                    <li>LTV Optimization</li>
+                </ul>
+            </div>
+            <div class="service-visual">
+                <div class="visual-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 2: WHO WE WORK WITH (HORIZONTAL SCROLL) -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="who-horizontal" id="who-it-is-for">
+
+        <!-- STATIC HEADER -->
+        <div class="who-header">
+            <span class="section__label reveal-up">Target Audience</span>
+            <h2 class="brands__headline reveal-up" id="brands-headline">
+                Businesses We<br>
+                <span class="text-accent">Work With</span>
+            </h2>
+            <p class="section__description reveal-up">
+                If you sell directly to customers, we can build your growth system.
+            </p>
+        </div>
+
+        <div class="who-sticky">
+            <div class="who-track">
+                <!-- Card 1: Online Stores -->
+                <div class="who-card">
+                    <div class="brands__panel-inner">
+                        <h3 class="brands__panel-title">🛍️ Online Stores</h3>
+                        <p class="brands__panel-desc">You run an online store and get traffic from ads or social
+                            media.</p>
+                        <ul class="vertical-list">
+                            <li>Create high-converting ad creatives & videos</li>
+                            <li>Set up email & WhatsApp follow-ups</li>
+                            <li>Recover abandoned carts</li>
+                            <li>Track customers with CRM</li>
+                        </ul>
+                        <div class="result-badge">Result: More repeat purchases and higher LTV.</div>
+                    </div>
+                </div>
+
+                <!-- Card 2: F&B -->
+                <div class="who-card">
+                    <div class="brands__panel-inner">
+                        <h3 class="brands__panel-title">🍽️ Restaurants & Cafés</h3>
+                        <p class="brands__panel-desc">You get customers daily, but there's no system to bring them
+                            back.
+                        </p>
+                        <ul class="vertical-list">
+                            <li>Create promotional content</li>
+                            <li>Set up WhatsApp re-engagement</li>
+                            <li>Build loyalty & repeat visit systems</li>
+                            <li>Maintain a customer database</li>
+                        </ul>
+                        <div class="result-badge">Result: More repeat visits and steady revenue.</div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Retail/Service -->
+                <div class="who-card">
+                    <div class="brands__panel-inner">
+                        <h3 class="brands__panel-title">🏬 Retail Stores & Service Businesses</h3>
+                        <p class="brands__panel-desc">You get walk-ins or leads, but follow-up is manual or
+                            inconsistent.</p>
+                        <ul class="vertical-list">
+                            <li>Capture leads properly</li>
+                            <li>Automate follow-ups</li>
+                            <li>Track customers in CRM</li>
+                            <li>Run retention campaigns</li>
+                        </ul>
+                        <div class="result-badge">Result: More closed leads and returning customers.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 3: HOW IT WORKS (The Growth System) -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="process" id="how-it-works">
+        <div class="section__container">
+            <div class="process__header">
+                <span class="section__label reveal-up">The Infrastructure</span>
+                <h2 class="process__headline reveal-up" id="process-headline">
+                    How We Build Your<br>
+                    <span class="text-accent">Growth System</span>
+                </h2>
+                <p class="section__description reveal-up">
+                    We don’t run random campaigns. We build a connected revenue engine that works together
+                    automatically.
+                </p>
+            </div>
+
+            <!-- New Process Structure -->
+            <div class="process-section">
+                <div class="process-track">
+                    <!-- Connecting Line -->
+                    <div class="process-line"></div>
+
+                    <!-- Step 01 -->
+                    <div class="process-step step-circle">
+                        <span class="step-number">Step 01</span>
+                        <h3 class="step-title">Content</h3>
+                        <span class="step-subtitle">Creative Engine</span>
+                        <p class="step-desc">High-volume asset production</p>
+                    </div>
+
+                    <!-- Step 02 -->
+                    <div class="process-step step-circle">
+                        <span class="step-number">Step 02</span>
+                        <h3 class="step-title">Automated<br>Follow-Ups</h3>
+                        <span class="step-subtitle">Conversion Logic</span>
+                        <p class="step-desc">Multi-channel touchpoint automation</p>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="process-step step-circle">
+                        <span class="step-number">Step 03</span>
+                        <h3 class="step-title">Customer<br>Tracking</h3>
+                        <span class="step-subtitle">Attribution Layer</span>
+                        <p class="step-desc">Real-time data visualization</p>
+                    </div>
+
+                    <!-- Step 04 -->
+                    <div class="process-step step-circle">
+                        <span class="step-number">Step 04</span>
+                        <h3 class="step-title">Repeat<br>Sales</h3>
+                        <span class="step-subtitle">LTV Optimization</span>
+                        <p class="step-desc">Predictive retention infrastructure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 5: ABOUT US (The Team) -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="team" id="about-us">
+        <div class="section__container">
+            <div class="about-header reveal-up">
+                <span class="section__label">The Team</span>
+                <h2 class="section-title">The Infrastructure Architects</h2>
+                <p class="section-desc">A specialized team dedicated to high-performance revenue systems.</p>
+            </div>
+
+            <div class="team-grid reveal-container">
+                <!-- Member 1 -->
+                <div class="team-card reveal-card">
+                    <div class="member-image-wrapper">
+                        <div class="member-image member-1"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Alex Rivers</h3>
+                        <span>Founder / System Architect</span>
+                    </div>
+                </div>
+                <!-- Member 2 -->
+                <div class="team-card reveal-card">
+                    <div class="member-image-wrapper">
+                        <div class="member-image member-2"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Sarah Chen</h3>
+                        <span>Director of Strategy</span>
+                    </div>
+                </div>
+                <!-- Member 3 -->
+                <div class="team-card reveal-card">
+                    <div class="member-image-wrapper">
+                        <div class="member-image member-3"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Marcus Vane</h3>
+                        <span>Lead Growth Engineer</span>
+                    </div>
+                </div>
+                <!-- Member 4 -->
+                <div class="team-card reveal-card">
+                    <div class="member-image-wrapper">
+                        <div class="member-image member-4"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Elena Rossi</h3>
+                        <span>Creative Director</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="final-cta" id="final-cta">
+        <div class="final-cta__container">
+            <div class="final-cta__glow"></div>
+            <h2 class="final-cta__headline reveal-up" id="final-cta-headline">
+                Ready to Build Your<br>
+                <span class="text-accent">Revenue System?</span>
+            </h2>
+            <p class="final-cta__sub reveal-up" id="final-cta-sub">
+                If you want more repeat customers without manual follow-ups, let's talk.
+            </p>
+
+            <!-- Contact Form -->
+            <form class="contact-form reveal-up" action="https://formspree.io/f/xqedqgrg" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell Us About Your Business</label>
+                    <textarea id="message" name="message" rows="5"
+                        placeholder="What challenges are you facing with customer retention?" required></textarea>
+                </div>
+
+                <!-- Hidden field for subject -->
+                <input type="hidden" name="_subject" value="New Contact Form Submission - AxionCo">
+
+                <!-- Formspree configuration -->
+                <input type="hidden" name="_next" value="https://yourdomain.com/thank-you">
+                <input type="text" name="_gotcha" style="display:none">
+
+                <button type="submit" class="btn btn--primary btn--large form-submit">
+                    <span>Send Message</span>
+                    <svg class="btn__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <!-- Status Messages -->
+                <div class="form-status form-status--success" style="display: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span>Message sent successfully! We'll get back to you soon.</span>
+                </div>
+                <div class="form-status form-status--error" style="display: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Something went wrong. Please try again.</span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- FOOTER -->
+    <!-- ═══════════════════════════════════════ -->
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <span class="footer__logo">
+                        <span class="nav__logo-icon">◆</span>
+                        AxionCo
+                    </span>
+                    <p class="footer__tagline">Revenue Infrastructure for<br>compounding growth.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#how-it-works" class="footer__link">How It Works</a>
+                    <a href="#who-it-is-for" class="footer__link">Who It's For</a>
+                    <a href="#about-us" class="footer__link">Meet the Team</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 AxionCo. All rights reserved.</p>
+                <p class="footer__legal">Revenue. System. Story.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+    <script src="main.js"></script>
 </body>
+
 </html>

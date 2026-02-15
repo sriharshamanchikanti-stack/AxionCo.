@@ -1,0 +1,186 @@
+/* ═══════════════════════════════════════ */
+/* HORIZONTAL SCROLL CARDS (WHO IT'S FOR) */
+/* ═══════════════════════════════════════ */
+
+/* Section height for scroll */
+.who-horizontal {
+    height: 300vh;
+    position: relative;
+    background: var(--bg-secondary);
+}
+
+/* Header positioned at top */
+.who-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: clamp(80px, 12vw, 120px) var(--container-padding);
+    text-align: center;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Sticky viewport */
+.who-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    /* Space for header */
+}
+
+/* Horizontal track */
+.who-track {
+    display: flex;
+    gap: 40px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+}
+
+/* Individual cards */
+.who-card {
+    min-width: 70vw;
+    max-width: 800px;
+    height: 70vh;
+    background: rgba(10, 10, 10, 0.95);
+    border: 1px solid rgba(255, 106, 0, 0.2);
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+
+    /* GPU acceleration */
+    transform: translateZ(0) scale(0.92);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+
+    /* Premium transitions */
+    opacity: 0.5;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+    /* Prevent text selection during scroll */
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Active card state */
+.who-card.active {
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+    border-color: rgba(255, 106, 0, 0.6);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6), 0 0 40px rgba(255, 106, 0, 0.15);
+}
+
+/* Card content styling */
+.who-card .brands__panel-inner {
+    background: transparent;
+    backdrop-filter: none;
+    border: none;
+    padding: 0;
+    height: 100%;
+}
+
+.who-card .brands__panel-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.who-card .brands__panel-desc {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.who-card .vertical-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.who-card .vertical-list li {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 0;
+}
+
+.who-card .vertical-list li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.who-card .result-badge {
+    margin-top: auto;
+    padding: 12px 20px;
+    background: rgba(255, 106, 0, 0.1);
+    border: 1px solid rgba(255, 106, 0, 0.3);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-align: center;
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+    .who-card {
+        min-width: 80vw;
+        height: 75vh;
+        padding: 40px 30px;
+    }
+}
+
+/* Mobile reset - normal stacked cards */
+@media (max-width: 768px) {
+    .who-horizontal {
+        height: auto !important;
+        padding: 60px 20px;
+    }
+
+    .who-header {
+        position: relative;
+        padding: 0 0 40px 0;
+    }
+
+    .who-sticky {
+        position: relative !important;
+        height: auto;
+        padding-top: 0;
+    }
+
+    .who-track {
+        flex-direction: column;
+        transform: none !important;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .who-card {
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 400px;
+        opacity: 1 !important;
+        transform: none !important;
+        margin: 0;
+    }
+}
